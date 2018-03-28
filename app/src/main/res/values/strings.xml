@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Snap Reminder</string>
+    <string name="btn_edit">Edytuj</string>
+    <string name="btn_update">Aktualizuj</string>
+    <string name="btn_delete">Usuń</string>
+    <string name="btn_capture">Nowe zdjęcie</string>
+    <string name="text_id">ID</string>
+    <string name="text_title">Tytuł</string>
+    <string name="text_subtitle">Opis</string>
+    <string name="text_time">Czas rozpoczęcia</string>
+    <string name="text_date">Data rozpoczęcia</string>
+    <string name="notify">Powiadomienia</string>
+    <string name="przypomnienie">Przypominaj co: </string>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/detailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:text="@string/text_id"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/detailTekstTytul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="15dp"
+        android:text="@string/text_title" />
+
+    <TextView
+        android:id="@+id/detailTytul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/detailTekstTytul"
+        android:padding="15dp"
+        android:scrollbars="vertical"
+        android:text="@string/text_title"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailTekstOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailTytul"
+        android:layout_alignParentStart="true"
+        android:padding="15dp"
+        android:text="@string/text_subtitle" />
+
+    <TextView
+        android:id="@+id/detailOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailTytul"
+        android:layout_toEndOf="@id/detailTekstTytul"
+        android:layout_alignParentEnd="true"
+        android:padding="15dp"
+        android:scrollbars="vertical"
+        android:text="@string/text_subtitle"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailTekstInterwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailOpis"
+        android:layout_alignParentStart="true"
+        android:padding="15dp"
+        android:text="@string/przypomnienie"/>
+
+    <TextView
+        android:id="@+id/detailDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailOpis"
+        android:layout_toEndOf="@id/detailTekstInterwal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="24"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailTekstDay"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailOpis"
+        android:layout_toEndOf="@id/detailDay"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="dni"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_below="@id/detailOpis"
+        android:layout_toEndOf="@id/detailTekstDay"
+        android:text="24"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailTekstHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailOpis"
+        android:layout_toEndOf="@id/detailHour"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="godziny"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_below="@id/detailOpis"
+        android:layout_toEndOf="@id/detailTekstHour"
+        android:text="60"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailTekstMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailOpis"
+        android:layout_toEndOf="@id/detailMinute"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="minuty"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailTekstCzas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailDay"
+        android:layout_alignParentStart="true"
+        android:padding="15dp"
+        android:text="@string/text_time" />
+
+    <TextView
+        android:id="@+id/detailCzas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailDay"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/detailTekstCzas"
+        android:padding="15dp"
+        android:text="@string/text_time"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/detailTekstData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailCzas"
+        android:layout_alignParentStart="true"
+        android:padding="15dp"
+        android:text="@string/text_date" />
+
+    <TextView
+        android:id="@+id/detailData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailCzas"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/detailTekstCzas"
+        android:padding="15dp"
+        android:text="@string/text_date"
+        android:textColor="@color/tekstGlowny" />
+
+    <TextView
+        android:id="@+id/obrazekText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailData"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/checkNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notify"
+        android:padding="10dp"
+        android:layout_below="@id/detailTekstData" />
+
+    <ImageView
+        android:id="@+id/detailObraz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkNotify" />
+
+    <Button
+        android:id="@+id/edit_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="editTask"
+        android:text="@string/btn_edit" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="deleteTask"
+        android:text="@string/btn_delete" />
+
+</RelativeLayout>
