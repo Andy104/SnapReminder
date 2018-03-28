@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tekstGlowny">#202020</color>
+    <color name="tekstPrzypomnienia">#8e4b7ccf</color>
+    <color name="colorLowCarb">#b76262</color>
+    <color name="colorLowFat">#e60f0f</color>
+    <color name="colorLowSodium">#0d138b</color>
+    <color name="colorMediumCarb">#41e60f</color>
+    <color name="colorVegetarian">#e6db0f</color>
+    <color name="colorBalanced">#818181</color>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/editID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/text_id"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTytul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:ems="8"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+        android:text="@string/text_title"
+        android:textColor="@color/tekstGlowny"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/editTytul"
+        android:ems="8"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:text="@string/text_subtitle"
+        android:textColor="@color/tekstGlowny"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/editInterwalTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editOpis"
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="@string/przypomnienie"/>
+
+    <EditText
+        android:id="@+id/editDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/editOpis"
+        android:layout_toRightOf="@id/editInterwalTekst"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:text="60" />
+
+    <TextView
+        android:id="@+id/editDayTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editOpis"
+        android:layout_toRightOf="@id/editDay"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="dni"/>
+
+    <EditText
+        android:id="@+id/editHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/editOpis"
+        android:layout_toRightOf="@id/editDayTekst"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:text="60" />
+
+    <TextView
+        android:id="@+id/editHourTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editOpis"
+        android:layout_toRightOf="@id/editHour"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="godziny"/>
+
+    <EditText
+        android:id="@+id/editMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@id/editOpis"
+        android:layout_toEndOf="@id/editHourTekst"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:maxLength="2"
+        android:text="60" />
+
+    <TextView
+        android:id="@+id/editMinuteTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editOpis"
+        android:layout_toRightOf="@id/editMinute"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="minuty"/>
+
+    <TextView
+        android:id="@+id/editCzasTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@id/editInterwalTekst"
+        android:layout_alignParentStart="true"
+        android:text="@string/text_time" />
+
+    <TextView
+        android:id="@+id/editCzas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:layout_below="@id/editInterwalTekst"
+        android:layout_toRightOf="@id/editCzasTekst"
+        android:ems="8"
+        android:text="@string/text_time"
+        android:textColor="@color/tekstGlowny"
+        android:textSize="16sp"
+        android:onClick="timePicker" />
+
+    <TextView
+        android:id="@+id/editDataTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@id/editCzasTekst"
+        android:layout_alignParentStart="true"
+        android:text="@string/text_date" />
+
+    <TextView
+        android:id="@+id/editData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:layout_below="@id/editCzasTekst"
+        android:layout_toRightOf="@id/editDataTekst"
+        android:ems="8"
+        android:text="@string/text_date"
+        android:textColor="@color/tekstGlowny"
+        android:textSize="16sp"
+        android:onClick="datePicker"/>
+
+    <TextView
+        android:id="@+id/editPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/editData"
+        android:text="Path"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/podglad"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editDataTekst" />
+
+    <Button
+        android:id="@+id/capture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="cameraButton"
+        android:text="@string/btn_capture" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/btn_update"
+        android:onClick="updateDetail"/>
+
+</RelativeLayout>
